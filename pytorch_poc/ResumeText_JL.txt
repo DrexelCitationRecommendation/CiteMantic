@@ -1,0 +1,74 @@
+Jonathan Law
+647 Santa Fe Drive, Mantua, NJ 08051
+jal457@drexel.edu • github.com/shindig7 • jonathan-a-law.com • (856) 689 - 0524
+
+EDUCATION
+Bachelor of Science, Data Science
+Minor: Business Analytics
+
+Drexel University
+Expected Graduation Date: 2020
+
+SKILLS
+Languages: Python, Julia, R, SQL, MongoDB, Git, Regular Expressions
+Software: Tableau, PowerBI, Atom, Pycharm, Jupyter Notebook
+Operating Systems: Microsoft Windows, Linux
+
+EXPERIENCE
+The Chemours Company
+
+Wilmington, DE
+
+Data Science & People Analytics Intern
+June 2019 - Present
+• Created and maintained reporting scripts in Python utilizing data from the employee resource management service
+Workday, providing the University Relations team with timely and specific reports, analyses, and recommendations
+• Participated in high-level projects under the CHRO and CIO involving company-wide metrics and improving existing
+business processes
+• Served as a general technical resource for the Human Resources team, consulting on various projects throughout the
+organization on technology and technical feasibility
+
+DXC Technology
+
+Mclean, VA
+
+Data Science Intern
+October 2018 - March 2019
+• Lead a team of three data science co-ops in developing a skills recommendation engine using machine learning,
+network analysis, web crawling, and NLP to ensure that DXC’s employees have modern skillsets suited to the current
+demand from our customers
+• Presented final product to upper management including the CHRO and senior executive officers
+• Created a proof-of-concept tool for skill word extraction from resume texts using custom-trained word embeddings
+and a neural network
+• Lead various code reviews, tutoring sessions to ensure that code standards remained high throughout the project
+• Consulted on various small projects involving data analytics, visualizations, NLP, and web crawling
+
+Bloomberg LP
+
+Princeton, NJ
+
+Data Analyst & Data Acquisition Co-Op
+Sept 2016 - Mar 2017 / Oct 2017 - Mar. 2018
+• Developed, tested a proof-of-concept tool for automated name and title extraction from company management web
+pages using Python, Regular Expressions, XPath, and NLP, saving up to 90 FTE hours per week and replacing up to
+25% of existing, dedicated web crawlers
+• Leveraged Python and SQL to design and implement a solution for automating a manual process of comparing
+financial documents from multiple sources to determine a coefficient of similarity and flag duplicates, resulting in a
+weekly time savings of 35 hours for the team
+• Designed, implemented dedicated webcrawlers using Bloomberg’s proprietary webcrawling software, APIs, XPath,
+Regular Expressions, and JavaScript to deliver custom content to stakeholders and customers
+• Oversaw all quality control efforts for the webcrawling team’s overseas vendors through reviewing code syntax, testing
+completed crawlers, and relaying constructive criticism back to the team when necessary
+
+TECHNICAL PROJECTS
+RECO
+Personal Project
+December 2018 - Present
+• Reco is a self-developed app that seeks to provide users with ultra-personalized movie recommendations based on
+machine learning, statistical analysis, and NLP without relying on other users’ data
+• Developed data models and automated data collection scripts utilizing several APIs and custom-built web scrapers
+• Managed MongoDB DBaaS containing records for over 35,000 movies
+• Developed statistical techniques to predict a given user’s rating of a movie using a decision tree classifier and a
+NaiveBayes classifier
+
+
