@@ -129,7 +129,7 @@ def main():
 
     train_model(test_data, wv, model, 25)
 
-    text = open("Data/ResumeText_JL.txt").read()
+    text = open("ResumeText_JL.txt").read()
     words = [w.lower() for w in multi_split(text, [",", " ", "\n", "-"])]
     words = list(filter(wv.in_vocab, words))
 
