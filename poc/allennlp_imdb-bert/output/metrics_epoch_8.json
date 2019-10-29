@@ -1,0 +1,9 @@
+{
+  "training_duration": "00:33:33",
+  "training_start_epoch": 0,
+  "training_epochs": 8,
+  "epoch": 8,
+  "training_accuracy": 0.95236,
+  "training_loss": 0.1280561267014812,
+  "best_epoch": 8
+}

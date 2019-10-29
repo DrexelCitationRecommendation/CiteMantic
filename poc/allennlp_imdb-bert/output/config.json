@@ -1,0 +1,55 @@
+{
+    "dataset_reader": {
+        "type": "imdb",
+        "token_indexers": {
+            "tokens": {
+                "type": "single_id",
+                "lowercase_tokens": true
+            }
+        },
+        "tokenizer": {
+            "type": "word"
+        }
+    },
+    "iterator": {
+        "type": "bucket",
+        "batch_size": 64,
+        "sorting_keys": [
+            [
+                "tokens",
+                "num_tokens"
+            ]
+        ]
+    },
+    "model": {
+        "type": "rnn_classifier",
+        "dropout": 0.2,
+        "seq2vec_encoder": {
+            "type": "gru",
+            "bidirectional": true,
+            "hidden_size": 100,
+            "input_size": 100,
+            "num_layers": 1
+        },
+        "text_field_embedder": {
+            "token_embedders": {
+                "tokens": {
+                    "type": "embedding",
+                    "embedding_dim": 100,
+                    "pretrained_file": "https://s3-us-west-2.amazonaws.com/allennlp/datasets/glove/glove.6B.100d.txt.gz",
+                    "trainable": false
+                }
+            }
+        }
+    },
+    "train_data_path": "train",
+    "test_data_path": "test",
+    "trainer": {
+        "cuda_device": -1,
+        "num_epochs": 10,
+        "optimizer": {
+            "type": "adam"
+        }
+    },
+    "evaluate_on_test": true
+}

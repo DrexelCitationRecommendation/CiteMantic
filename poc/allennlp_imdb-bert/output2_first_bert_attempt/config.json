@@ -1,0 +1,58 @@
+{
+    "dataset_reader": {
+        "type": "imdb",
+        "token_indexers": {
+            "tokens": {
+                "type": "bert-pretrained",
+                "do_lowercase": true,
+                "pretrained_model": "bert-base-uncased",
+                "use_starting_offsets": true
+            }
+        },
+        "tokenizer": {
+            "type": "character"
+        }
+    },
+    "iterator": {
+        "type": "bucket",
+        "batch_size": 64,
+        "sorting_keys": [
+            [
+                "tokens",
+                "num_tokens"
+            ]
+        ]
+    },
+    "model": {
+        "type": "rnn_classifier",
+        "dropout": 0.2,
+        "seq2vec_encoder": {
+            "type": "gru",
+            "bidirectional": true,
+            "hidden_size": 100,
+            "input_size": 768,
+            "num_layers": 1
+        },
+        "text_field_embedder": {
+            "allow_unmatched_keys": true,
+            "token_embedders": {
+                "tokens": {
+                    "type": "bert-pretrained",
+                    "pretrained_model": "bert-base-uncased",
+                    "requires_grad": false,
+                    "top_layer_only": true
+                }
+            }
+        }
+    },
+    "train_data_path": "train",
+    "test_data_path": "test",
+    "trainer": {
+        "cuda_device": -1,
+        "num_epochs": 10,
+        "optimizer": {
+            "type": "adam"
+        }
+    },
+    "evaluate_on_test": true
+}
