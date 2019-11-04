@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Citation Recommendation" company="Drexel University" webLink="http://" view-date="2019-10-06" view-index="0" gantt-divider-location="535" resource-divider-location="245" version="2.8.10" locale="en_US">
+    <description><![CDATA[Implement 'Claim Extraction' paper.
+Link: https://arxiv.org/pdf/1907.00962.pdf]]></description>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Name" width="213" order="0"/>
+        <field id="tpd4" name="Begin date" width="158" order="1"/>
+        <field id="tpd5" name="End date" width="158" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="173" order="0"/>
+        <field id="1" name="Default role" width="66" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="us.federal">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"><![CDATA[New Years Day]]></date>
+        <date year="" month="2" date="2" type="NEUTRAL"><![CDATA[Groundhog Day]]></date>
+        <date year="" month="7" date="4" type="HOLIDAY"><![CDATA[Independence Day]]></date>
+        <date year="" month="11" date="11" type="HOLIDAY"><![CDATA[Veterans Day]]></date>
+        <date year="" month="12" date="25" type="HOLIDAY"><![CDATA[Christmas Day]]></date>
+        <date year="2008" month="1" date="21" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2008" month="2" date="18" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2008" month="5" date="26" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2008" month="9" date="1" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2008" month="10" date="13" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2008" month="11" date="27" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2008" month="11" date="28" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2009" month="1" date="19" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2009" month="2" date="16" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2009" month="5" date="25" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2009" month="7" date="3" type="HOLIDAY"><![CDATA[Independence Day]]></date>
+        <date year="2009" month="9" date="7" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2009" month="10" date="12" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2009" month="11" date="26" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2009" month="11" date="27" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2010" month="1" date="18" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2010" month="2" date="15" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2010" month="5" date="9" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2010" month="5" date="31" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2010" month="7" date="5" type="HOLIDAY"><![CDATA[Independence Day]]></date>
+        <date year="2010" month="9" date="6" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2010" month="10" date="11" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2010" month="11" date="25" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2010" month="11" date="26" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2010" month="12" date="24" type="HOLIDAY"><![CDATA[Christmas Day (in lieu)]]></date>
+        <date year="2010" month="12" date="31" type="HOLIDAY"><![CDATA[New Years Day (in lieu)]]></date>
+        <date year="2011" month="1" date="17" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2011" month="2" date="21" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2011" month="4" date="15" type="NEUTRAL"><![CDATA[Emancipation Day (Regional)]]></date>
+        <date year="2011" month="5" date="8" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2011" month="5" date="30" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2011" month="6" date="19" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2011" month="9" date="5" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2011" month="10" date="10" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2011" month="11" date="24" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2011" month="11" date="25" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2011" month="12" date="26" type="HOLIDAY"><![CDATA[Christmas Holiday]]></date>
+        <date year="2012" month="1" date="2" type="HOLIDAY"><![CDATA[New Years Day (in lieu)]]></date>
+        <date year="2012" month="1" date="16" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2012" month="2" date="20" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2012" month="4" date="16" type="NEUTRAL"><![CDATA[Emancipation Day (Regional)]]></date>
+        <date year="2012" month="5" date="13" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2012" month="5" date="28" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2012" month="6" date="17" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2012" month="9" date="3" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2012" month="10" date="8" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2012" month="11" date="12" type="HOLIDAY"><![CDATA[Veterans Day]]></date>
+        <date year="2012" month="11" date="22" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2012" month="11" date="23" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2013" month="1" date="21" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2013" month="2" date="18" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2013" month="4" date="16" type="NEUTRAL"><![CDATA[Emancipation Day (Regional)]]></date>
+        <date year="2013" month="5" date="12" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2013" month="5" date="27" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2013" month="6" date="16" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2013" month="9" date="2" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2013" month="10" date="14" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2013" month="11" date="28" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2013" month="11" date="29" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2014" month="1" date="20" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2014" month="2" date="17" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2014" month="4" date="16" type="NEUTRAL"><![CDATA[Emancipation Day (Regional)]]></date>
+        <date year="2014" month="5" date="11" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2014" month="5" date="26" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2014" month="6" date="15" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2014" month="9" date="1" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2014" month="10" date="13" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2014" month="11" date="27" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2014" month="11" date="28" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2014" month="12" date="26" type="HOLIDAY"><![CDATA[Day after Christmas]]></date>
+        <date year="2015" month="1" date="19" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2015" month="2" date="16" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2015" month="4" date="16" type="NEUTRAL"><![CDATA[Emancipation Day (Regional)]]></date>
+        <date year="2015" month="5" date="10" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2015" month="5" date="25" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2015" month="6" date="21" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2015" month="7" date="3" type="HOLIDAY"><![CDATA[Independence Day (observed)]]></date>
+        <date year="2015" month="9" date="7" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2015" month="10" date="12" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2015" month="11" date="26" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2015" month="11" date="27" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2016" month="1" date="18" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2016" month="2" date="15" type="HOLIDAY"><![CDATA[Presidents Day]]></date>
+        <date year="2016" month="4" date="15" type="NEUTRAL"><![CDATA[Emancipation Day (Regional)]]></date>
+        <date year="2016" month="5" date="8" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2016" month="5" date="30" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2016" month="6" date="19" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2016" month="9" date="5" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2016" month="10" date="10" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2016" month="11" date="24" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2016" month="11" date="25" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2016" month="12" date="26" type="HOLIDAY"><![CDATA[Christmas Day (in lieu)]]></date>
+        <date year="2017" month="1" date="2" type="HOLIDAY"><![CDATA[New Years Day (in lieu)]]></date>
+        <date year="2017" month="1" date="16" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2017" month="2" date="20" type="HOLIDAY"><![CDATA[Presidents' Day]]></date>
+        <date year="2017" month="5" date="14" type="NEUTRAL"><![CDATA[Mother's Day]]></date>
+        <date year="2017" month="5" date="29" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2017" month="6" date="18" type="NEUTRAL"><![CDATA[Father's Day]]></date>
+        <date year="2017" month="9" date="4" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2017" month="10" date="9" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2017" month="11" date="10" type="HOLIDAY"><![CDATA[Veterans Day (in lieu)]]></date>
+        <date year="2017" month="11" date="23" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2017" month="11" date="24" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2018" month="1" date="15" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2018" month="2" date="19" type="HOLIDAY"><![CDATA[Presidents' Day]]></date>
+        <date year="2018" month="5" date="13" type="NEUTRAL"><![CDATA[Mother's Day]]></date>
+        <date year="2018" month="5" date="28" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2018" month="6" date="17" type="NEUTRAL"><![CDATA[Father's Day]]></date>
+        <date year="2018" month="9" date="3" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2018" month="10" date="8" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2018" month="11" date="22" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2018" month="11" date="23" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+        <date year="2019" month="1" date="21" type="HOLIDAY"><![CDATA[Martin Luther King Day]]></date>
+        <date year="2019" month="2" date="18" type="HOLIDAY"><![CDATA[Presidents' Day]]></date>
+        <date year="2019" month="5" date="12" type="NEUTRAL"><![CDATA[Mother's Day]]></date>
+        <date year="2019" month="5" date="27" type="HOLIDAY"><![CDATA[Memorial Day]]></date>
+        <date year="2019" month="6" date="16" type="NEUTRAL"><![CDATA[Father's Day]]></date>
+        <date year="2019" month="9" date="2" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="2019" month="10" date="14" type="HOLIDAY"><![CDATA[Columbus Day]]></date>
+        <date year="2019" month="11" date="28" type="HOLIDAY"><![CDATA[Thanksgiving]]></date>
+        <date year="2019" month="11" date="29" type="NEUTRAL"><![CDATA[Day after Thanksgiving]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="12" name="Populate plan with GanttProject" color="#8cb6ce" meeting="false" start="2019-10-15" duration="9" complete="0" thirdDate="2019-10-15" thirdDate-constraint="0" expand="true"/>
+        <task id="69" name="Create Slack channel and Github serer" color="#8cb6ce" meeting="false" start="2019-10-15" duration="2" complete="0" thirdDate="2019-10-27" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Read Claim Extraction paper" color="#8cb6ce" meeting="false" start="2019-10-19" duration="3" complete="0" thirdDate="2019-10-15" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Learn recurrent neural network" color="#8cb6ce" meeting="false" start="2019-10-19" duration="4" complete="0" thirdDate="2019-10-09" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Learn PyTorch and AllenNLP" color="#8cb6ce" meeting="false" start="2019-10-19" duration="9" complete="0" thirdDate="2019-10-15" thirdDate-constraint="0" expand="true"/>
+        <task id="41" name="Calculate Google Cloud price" color="#8cb6ce" meeting="false" start="2019-10-23" duration="1" complete="0" thirdDate="2019-10-08" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="Write design document" color="#8cb6ce" meeting="false" start="2019-10-21" duration="10" complete="0" thirdDate="2019-10-17" thirdDate-constraint="0" expand="true"/>
+        <task id="46" name="Write a literature review for the paper" color="#8cb6ce" meeting="false" start="2019-10-28" duration="10" complete="0" thirdDate="2019-10-13" thirdDate-constraint="0" expand="true"/>
+        <task id="17" name="Implement the original Claim Extraction" color="#8cb6ce" meeting="false" start="2019-10-28" duration="27" complete="0" thirdDate="2019-10-21" thirdDate-constraint="0" priority="4" expand="true">
+            <task id="51" name="Set up AllenNLP and PyTorch" color="#8cb6ce" meeting="false" start="2019-10-28" duration="7" complete="0" thirdDate="2019-10-13" thirdDate-constraint="0" expand="true"/>
+            <task id="62" name="Understand contextual embeddings" color="#8cb6ce" meeting="false" start="2019-10-28" duration="7" complete="0" thirdDate="2019-10-27" thirdDate-constraint="0" expand="true"/>
+            <task id="65" name="Clone the original model from Github" color="#8cb6ce" meeting="false" start="2019-11-04" duration="1" complete="0" thirdDate="2019-10-27" thirdDate-constraint="0" expand="true"/>
+            <task id="55" name="Run the original model" color="#8cb6ce" meeting="false" start="2019-11-05" duration="6" complete="0" thirdDate="2019-10-13" thirdDate-constraint="0" expand="true"/>
+            <task id="71" name="Convert the configuration file to a main file" color="#8cb6ce" meeting="false" start="2019-11-04" duration="20" complete="0" thirdDate="2019-10-20" thirdDate-constraint="0" expand="true">
+                <task id="74" name="Configure DatasetReader" color="#8cb6ce" meeting="false" start="2019-11-04" duration="7" complete="0" thirdDate="2019-10-27" thirdDate-constraint="0" expand="true"/>
+                <task id="75" name="Configure Model" color="#8cb6ce" meeting="false" start="2019-11-12" duration="6" complete="0" thirdDate="2019-10-27" thirdDate-constraint="0" expand="true"/>
+                <task id="79" name="Configure Training parameters" color="#8cb6ce" meeting="false" start="2019-11-18" duration="7" complete="0" thirdDate="2019-10-27" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="70" name="Prepare presentation slides" color="#8cb6ce" meeting="false" start="2019-11-12" duration="6" complete="0" thirdDate="2019-10-27" thirdDate-constraint="0" expand="true"/>
+            <task id="59" name="Compare result with the original paper" color="#8cb6ce" meeting="false" start="2019-11-12" duration="6" complete="0" thirdDate="2019-10-13" thirdDate-constraint="0" expand="true"/>
+            <task id="32" name="Practice and finalize the presentation" color="#8cb6ce" meeting="false" start="2019-11-18" duration="7" complete="0" thirdDate="2019-11-01" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="43" name="Present the work of the term" color="#8cb6ce" meeting="true" start="2019-11-25" duration="0" complete="0" thirdDate="2019-11-06" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Kiet" function="1" contacts="kc3222@drexel.edu" phone=""/>
+        <resource id="4" name="Jonathan" function="1" contacts="" phone=""/>
+        <resource id="7" name="Brian" function="2" contacts="" phone=""/>
+        <resource id="10" name="Carter" function="2" contacts="" phone=""/>
+        <resource id="12" name="Jerry" function="2" contacts="" phone=""/>
+        <resource id="1" name="Kiet" function="3" contacts="kc3222@drexel.edu" phone=""/>
+        <resource id="8" name="Brian" function="3" contacts="" phone=""/>
+        <resource id="13" name="Jerry" function="3" contacts="" phone=""/>
+        <resource id="2" name="Kiet" function="4" contacts="" phone=""/>
+        <resource id="5" name="Jonathan" function="4" contacts="" phone=""/>
+        <resource id="9" name="Brian" function="4" contacts="" phone=""/>
+        <resource id="11" name="Carter" function="4" contacts="" phone=""/>
+        <resource id="14" name="Justin" function="4" contacts="" phone=""/>
+        <resource id="15" name="Jerry" function="5" contacts="" phone=""/>
+        <resource id="16" name="Justin" function="5" contacts="" phone=""/>
+        <resource id="3" name="Kiet" function="5" contacts="kc3222@drexel.edu" phone=""/>
+        <resource id="17" name="Carter" function="6" contacts="" phone=""/>
+        <resource id="6" name="Jonathan" function="6" contacts="" phone=""/>
+        <resource id="18" name="Justin" function="6" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Project Manager"/>
+        <role id="2" name="Requirements Engineer (SRS)"/>
+        <role id="3" name="Design Document (DD)"/>
+        <role id="4" name="Coding"/>
+        <role id="5" name="Testing"/>
+        <role id="6" name="Presentation"/>
+    </roles>
+</project>
