@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2019-10-06" view-index="0" gantt-divider-location="535" resource-divider-location="293" version="2.8.10" locale="en_US">
+    <description/>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Name" width="260" order="0"/>
+        <field id="tpd4" name="Begin date" width="136" order="1"/>
+        <field id="tpd5" name="End date" width="135" order="2"/>
+        <timeline><![CDATA[10,0,8]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="151" order="0"/>
+        <field id="1" name="Default role" width="138" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Planning" color="#8cb6ce" meeting="false" start="2019-10-15" duration="13" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <task id="2" name="Create Gantt Chart" color="#8cb6ce" meeting="false" start="2019-10-15" duration="7" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="3" name="Create Slack channel and GitHub" color="#8cb6ce" meeting="false" start="2019-10-15" duration="1" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="6" name="Read Claims Extraction papers" color="#8cb6ce" meeting="false" start="2019-10-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="8" name="Learn Pytorch and AllenNLP" color="#8cb6ce" meeting="false" start="2019-10-29" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="17" name="Design" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+            <task id="10" name="Write Design Document" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="12" name="Create Design Diagram" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="24" name="Write Lit Review" color="#8cb6ce" meeting="false" start="2019-11-01" duration="1" complete="0" thirdDate="2019-11-04" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="27" name="Implementation" color="#8cb6ce" meeting="false" start="2019-11-06" duration="13" complete="0" thirdDate="2019-11-01" thirdDate-constraint="0" expand="true">
+            <task id="30" name="Implement Original Claim Extraction Model" color="#8cb6ce" meeting="false" start="2019-11-06" duration="11" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+                <task id="38" name="Requisition VM from CCI" color="#8cb6ce" meeting="false" start="2019-11-06" duration="4" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
+                    <depend id="42" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="42" name="Set up environment" color="#8cb6ce" meeting="false" start="2019-11-12" duration="3" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
+                    <depend id="52" type="2" difference="0" hardness="Strong"/>
+                    <depend id="57" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="52" name="Run Original Model(s)" color="#8cb6ce" meeting="false" start="2019-11-15" duration="4" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="57" name="Convert configuration file to main file" color="#000000" meeting="false" start="2019-11-15" duration="6" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                <task id="58" name="Configure DataSet Reader" color="#8cb6ce" meeting="false" start="2019-11-15" duration="2" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                    <depend id="67" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="67" name="Configure Model" color="#8cb6ce" meeting="false" start="2019-11-19" duration="3" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true">
+                    <depend id="72" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="72" name="Configure hyperparameters" color="#8cb6ce" meeting="false" start="2019-11-22" duration="1" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="34" name="Presentation" color="#000000" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+            <task id="80" name="Create Presentation" color="#8cb6ce" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="35" name="Present Fall Work" color="#8cb6ce" meeting="true" start="2019-11-25" duration="0" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="19" name="Jonathan Law" function="Default:1" contacts="jal457@drexel.edu" phone="8566890524"/>
+        <resource id="20" name="Kiet Chu" function="Default:1" contacts="kc3222@drexel.edu" phone="267-506-0058"/>
+        <resource id="21" name="Brain Stump" function="1" contacts="bas369@drexel.edu " phone="484-529-4049"/>
+        <resource id="22" name="Carter Walsh" function="1" contacts="cdw77@drexel.edu" phone="(516) 456-7689"/>
+        <resource id="23" name="Jerry DiBello" function="1" contacts="gdd28@drexel.edu" phone="484-889-9777"/>
+        <resource id="24" name="Justin Petrecz" function="1" contacts="jmp526@drexel.edu" phone="610-914-8834"/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="19" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="3" resource-id="19" function="Default:1" responsible="true" load="15.0"/>
+        <allocation task-id="8" resource-id="19" function="Default:1" responsible="true" load="10.0"/>
+        <allocation task-id="24" resource-id="19" function="2" responsible="false" load="25.0"/>
+        <allocation task-id="80" resource-id="19" function="4" responsible="true" load="25.0"/>
+        <allocation task-id="35" resource-id="19" function="Default:1" responsible="false" load="5.0"/>
+        <allocation task-id="42" resource-id="20" function="1" responsible="true" load="25.0"/>
+        <allocation task-id="6" resource-id="20" function="Default:1" responsible="false" load="10.0"/>
+        <allocation task-id="8" resource-id="20" function="Default:1" responsible="false" load="10.0"/>
+        <allocation task-id="24" resource-id="20" function="2" responsible="false" load="25.0"/>
+        <allocation task-id="52" resource-id="20" function="1" responsible="true" load="25.0"/>
+        <allocation task-id="57" resource-id="20" function="Default:1" responsible="true" load="30.0"/>
+        <allocation task-id="35" resource-id="20" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="38" resource-id="21" function="1" responsible="true" load="15.0"/>
+        <allocation task-id="6" resource-id="21" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="8" resource-id="21" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="10" resource-id="21" function="2" responsible="false" load="20.0"/>
+        <allocation task-id="12" resource-id="21" function="2" responsible="true" load="20.0"/>
+        <allocation task-id="24" resource-id="21" function="2" responsible="true" load="25.0"/>
+        <allocation task-id="57" resource-id="21" function="1" responsible="false" load="30.0"/>
+        <allocation task-id="35" resource-id="21" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="6" resource-id="22" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="8" resource-id="22" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="10" resource-id="22" function="2" responsible="true" load="20.0"/>
+        <allocation task-id="12" resource-id="22" function="2" responsible="false" load="20.0"/>
+        <allocation task-id="52" resource-id="22" function="1" responsible="false" load="25.0"/>
+        <allocation task-id="57" resource-id="22" function="1" responsible="false" load="30.0"/>
+        <allocation task-id="80" resource-id="22" function="4" responsible="false" load="25.0"/>
+        <allocation task-id="35" resource-id="22" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="80" resource-id="22" function="4" responsible="false" load="25.0"/>
+        <allocation task-id="6" resource-id="23" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="8" resource-id="23" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="10" resource-id="23" function="2" responsible="false" load="20.0"/>
+        <allocation task-id="12" resource-id="23" function="2" responsible="false" load="20.0"/>
+        <allocation task-id="57" resource-id="23" function="1" responsible="false" load="30.0"/>
+        <allocation task-id="35" resource-id="23" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="6" resource-id="24" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="8" resource-id="24" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="12" resource-id="24" function="2" responsible="false" load="20.0"/>
+        <allocation task-id="57" resource-id="24" function="1" responsible="false" load="30.0"/>
+        <allocation task-id="80" resource-id="24" function="4" responsible="false" load="25.0"/>
+        <allocation task-id="35" resource-id="24" function="4" responsible="false" load="5.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Programmer"/>
+        <role id="2" name="Design"/>
+        <role id="3" name="Tester"/>
+        <role id="4" name="Presentation"/>
+    </roles>
+</project>
