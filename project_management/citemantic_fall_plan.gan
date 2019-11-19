@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2019-10-06" view-index="0" gantt-divider-location="535" resource-divider-location="293" version="2.8.10" locale="en_US">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Name" width="260" order="0"/>
-        <field id="tpd4" name="Begin date" width="136" order="1"/>
-        <field id="tpd5" name="End date" width="135" order="2"/>
+        <field id="tpd11" name="Outline number" width="50" order="0"/>
+        <field id="tpd3" name="Name" width="308" order="1"/>
+        <field id="tpd4" name="Begin date" width="73" order="2"/>
+        <field id="tpd5" name="End date" width="100" order="3"/>
         <timeline><![CDATA[10,0,8]]></timeline>
     </view>
     <view id="resource-table">
@@ -36,41 +37,44 @@
         </taskproperties>
         <task id="0" name="Planning" color="#8cb6ce" meeting="false" start="2019-10-15" duration="13" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
             <depend id="17" type="2" difference="0" hardness="Strong"/>
-            <task id="2" name="Create Gantt Chart" color="#8cb6ce" meeting="false" start="2019-10-15" duration="7" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
             <task id="3" name="Create Slack channel and GitHub" color="#8cb6ce" meeting="false" start="2019-10-15" duration="1" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="2" name="Create Gantt Chart" color="#8cb6ce" meeting="false" start="2019-10-15" duration="7" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
             <task id="6" name="Read Claims Extraction papers" color="#8cb6ce" meeting="false" start="2019-10-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
             <task id="8" name="Learn Pytorch and AllenNLP" color="#8cb6ce" meeting="false" start="2019-10-29" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="17" name="Design" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-            <task id="10" name="Write Design Document" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-            <task id="12" name="Create Design Diagram" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-            <task id="24" name="Write Lit Review" color="#8cb6ce" meeting="false" start="2019-11-01" duration="1" complete="0" thirdDate="2019-11-04" thirdDate-constraint="0" expand="true"/>
-        </task>
-        <task id="27" name="Implementation" color="#8cb6ce" meeting="false" start="2019-11-06" duration="13" complete="0" thirdDate="2019-11-01" thirdDate-constraint="0" expand="true">
-            <task id="30" name="Implement Original Claim Extraction Model" color="#8cb6ce" meeting="false" start="2019-11-06" duration="11" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                <depend id="80" type="2" difference="0" hardness="Strong"/>
-                <task id="38" name="Requisition VM from CCI" color="#8cb6ce" meeting="false" start="2019-11-06" duration="4" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
-                    <depend id="42" type="2" difference="0" hardness="Strong"/>
+        <task id="81" name="Execution" color="#8cb6ce" meeting="false" start="2019-11-01" duration="17" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+            <task id="17" name="Design" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                <task id="24" name="Write Lit Review" color="#8cb6ce" meeting="false" start="2019-11-01" duration="1" complete="0" thirdDate="2019-11-04" thirdDate-constraint="0" expand="true"/>
+                <task id="10" name="Write Design Document" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                    <task id="12" name="Create Design Diagram" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
                 </task>
-                <task id="42" name="Set up environment" color="#8cb6ce" meeting="false" start="2019-11-12" duration="3" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
-                    <depend id="52" type="2" difference="0" hardness="Strong"/>
-                    <depend id="57" type="2" difference="0" hardness="Strong"/>
-                </task>
-                <task id="52" name="Run Original Model(s)" color="#8cb6ce" meeting="false" start="2019-11-15" duration="4" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="57" name="Convert configuration file to main file" color="#000000" meeting="false" start="2019-11-15" duration="6" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                <task id="58" name="Configure DataSet Reader" color="#8cb6ce" meeting="false" start="2019-11-15" duration="2" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                    <depend id="67" type="2" difference="0" hardness="Strong"/>
+            <task id="27" name="Implementation" color="#8cb6ce" meeting="false" start="2019-11-06" duration="13" complete="0" thirdDate="2019-11-01" thirdDate-constraint="0" expand="true">
+                <task id="30" name="Implement Original Claim Extraction Model" color="#8cb6ce" meeting="false" start="2019-11-06" duration="11" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                    <depend id="80" type="2" difference="0" hardness="Strong"/>
+                    <task id="38" name="Requisition VM from CCI" color="#8cb6ce" meeting="false" start="2019-11-06" duration="4" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
+                        <depend id="42" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="42" name="Set up environment" color="#8cb6ce" meeting="false" start="2019-11-12" duration="3" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
+                        <depend id="52" type="2" difference="0" hardness="Strong"/>
+                        <depend id="57" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="52" name="Run Original Model(s)" color="#8cb6ce" meeting="false" start="2019-11-15" duration="4" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
                 </task>
-                <task id="67" name="Configure Model" color="#8cb6ce" meeting="false" start="2019-11-19" duration="3" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true">
-                    <depend id="72" type="2" difference="0" hardness="Strong"/>
+                <task id="57" name="Convert configuration file to main file" color="#000000" meeting="false" start="2019-11-15" duration="6" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                    <task id="58" name="Configure DataSet Reader" color="#8cb6ce" meeting="false" start="2019-11-15" duration="2" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                        <depend id="67" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="67" name="Configure Model" color="#8cb6ce" meeting="false" start="2019-11-19" duration="3" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true">
+                        <depend id="72" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="72" name="Configure hyperparameters" color="#8cb6ce" meeting="false" start="2019-11-22" duration="1" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true"/>
                 </task>
-                <task id="72" name="Configure hyperparameters" color="#8cb6ce" meeting="false" start="2019-11-22" duration="1" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true"/>
             </task>
-        </task>
-        <task id="34" name="Presentation" color="#000000" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
-            <task id="80" name="Create Presentation" color="#8cb6ce" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-            <task id="35" name="Present Fall Work" color="#8cb6ce" meeting="true" start="2019-11-25" duration="0" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            <task id="34" name="Presentation" color="#000000" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="35" name="Present Fall Work" color="#8cb6ce" meeting="true" start="2019-11-25" duration="0" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                <task id="80" name="Create Presentation" color="#8cb6ce" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            </task>
         </task>
     </tasks>
     <resources>
