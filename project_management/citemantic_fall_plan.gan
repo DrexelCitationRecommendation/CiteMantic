@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2019-10-06" view-index="0" gantt-divider-location="535" resource-divider-location="293" version="2.8.10" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2019-11-24" view-index="0" gantt-divider-location="560" resource-divider-location="293" version="2.8.10" locale="en_US">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd11" name="Outline number" width="50" order="0"/>
-        <field id="tpd3" name="Name" width="308" order="1"/>
-        <field id="tpd4" name="Begin date" width="73" order="2"/>
-        <field id="tpd5" name="End date" width="100" order="3"/>
-        <timeline><![CDATA[10,0,8]]></timeline>
+        <field id="tpd11" name="Outline number" width="56" order="0"/>
+        <field id="tpd3" name="Name" width="314" order="1"/>
+        <field id="tpd4" name="Begin date" width="80" order="2"/>
+        <field id="tpd5" name="End date" width="106" order="3"/>
+        <timeline><![CDATA[8,0,10]]></timeline>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="151" order="0"/>
@@ -73,8 +73,22 @@
             </task>
             <task id="34" name="Presentation" color="#000000" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                 <task id="35" name="Present Fall Work" color="#8cb6ce" meeting="true" start="2019-11-25" duration="0" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-                <task id="80" name="Create Presentation" color="#8cb6ce" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                <task id="80" name="Create Presentation" color="#8cb6ce" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                    <depend id="97" type="2" difference="29" hardness="Strong"/>
+                </task>
             </task>
+        </task>
+        <task id="96" name="Implementation 2" meeting="false" start="2020-01-06" duration="55" complete="0" expand="true">
+            <task id="97" name="Switch embeddings to BERT" color="#8cb6ce" meeting="false" start="2020-01-06" duration="15" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                <depend id="103" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="103" name="Run model with new embeddings" color="#8cb6ce" meeting="false" start="2020-01-27" duration="15" complete="0" thirdDate="2020-01-27" thirdDate-constraint="0" expand="true">
+                <depend id="106" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-02-17" duration="10" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                <depend id="110" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="110" name="Write research paper" color="#8cb6ce" meeting="false" start="2020-03-02" duration="15" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
