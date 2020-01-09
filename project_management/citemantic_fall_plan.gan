@@ -5,7 +5,7 @@
         <field id="tpd3" name="Name" width="314" order="1"/>
         <field id="tpd4" name="Begin date" width="80" order="2"/>
         <field id="tpd5" name="End date" width="106" order="3"/>
-        <timeline><![CDATA[8,0,10]]></timeline>
+        <timeline><![CDATA[10,0,8]]></timeline>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="151" order="0"/>
@@ -35,60 +35,81 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Planning" color="#8cb6ce" meeting="false" start="2019-10-15" duration="13" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-            <depend id="17" type="2" difference="0" hardness="Strong"/>
-            <task id="3" name="Create Slack channel and GitHub" color="#8cb6ce" meeting="false" start="2019-10-15" duration="1" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-            <task id="2" name="Create Gantt Chart" color="#8cb6ce" meeting="false" start="2019-10-15" duration="7" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-            <task id="6" name="Read Claims Extraction papers" color="#8cb6ce" meeting="false" start="2019-10-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-            <task id="8" name="Learn Pytorch and AllenNLP" color="#8cb6ce" meeting="false" start="2019-10-29" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+        <task id="111" name="Fall" meeting="false" start="2019-10-15" duration="30" complete="0" expand="true">
+            <task id="0" name="Planning" color="#8cb6ce" meeting="false" start="2019-10-15" duration="13" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="false">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+                <task id="3" name="Create Slack channel and GitHub" color="#8cb6ce" meeting="false" start="2019-10-15" duration="1" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                <task id="2" name="Create Gantt Chart" color="#8cb6ce" meeting="false" start="2019-10-15" duration="7" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                <task id="6" name="Read Claims Extraction papers" color="#8cb6ce" meeting="false" start="2019-10-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                <task id="8" name="Learn Pytorch and AllenNLP" color="#8cb6ce" meeting="false" start="2019-10-29" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="81" name="Execution" color="#8cb6ce" meeting="false" start="2019-11-01" duration="17" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="false">
+                <task id="17" name="Design" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                    <task id="24" name="Write Lit Review" color="#8cb6ce" meeting="false" start="2019-11-01" duration="1" complete="0" thirdDate="2019-11-04" thirdDate-constraint="0" expand="true"/>
+                    <task id="10" name="Write Design Document" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                        <task id="12" name="Create Design Diagram" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                    </task>
+                </task>
+                <task id="27" name="Implementation" color="#8cb6ce" meeting="false" start="2019-11-06" duration="13" complete="0" thirdDate="2019-11-01" thirdDate-constraint="0" expand="true">
+                    <task id="30" name="Implement Original Claim Extraction Model" color="#8cb6ce" meeting="false" start="2019-11-06" duration="11" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                        <depend id="80" type="2" difference="0" hardness="Strong"/>
+                        <task id="38" name="Requisition VM from CCI" color="#8cb6ce" meeting="false" start="2019-11-06" duration="4" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
+                            <depend id="42" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="42" name="Set up environment" color="#8cb6ce" meeting="false" start="2019-11-12" duration="3" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
+                            <depend id="52" type="2" difference="0" hardness="Strong"/>
+                            <depend id="57" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="52" name="Run Original Model(s)" color="#8cb6ce" meeting="false" start="2019-11-15" duration="4" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                    </task>
+                    <task id="57" name="Convert configuration file to main file" color="#000000" meeting="false" start="2019-11-15" duration="6" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                        <task id="58" name="Configure DataSet Reader" color="#8cb6ce" meeting="false" start="2019-11-15" duration="2" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                            <depend id="67" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="67" name="Configure Model" color="#8cb6ce" meeting="false" start="2019-11-19" duration="3" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true">
+                            <depend id="72" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="72" name="Configure hyperparameters" color="#8cb6ce" meeting="false" start="2019-11-22" duration="1" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true"/>
+                    </task>
+                </task>
+                <task id="34" name="Presentation" color="#000000" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <task id="35" name="Present Fall Work" color="#8cb6ce" meeting="true" start="2019-11-25" duration="0" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                    <task id="80" name="Create Presentation" color="#8cb6ce" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                        <depend id="115" type="2" difference="29" hardness="Strong"/>
+                        <depend id="118" type="2" difference="29" hardness="Strong"/>
+                    </task>
+                </task>
+            </task>
         </task>
-        <task id="81" name="Execution" color="#8cb6ce" meeting="false" start="2019-11-01" duration="17" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-            <task id="17" name="Design" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                <task id="24" name="Write Lit Review" color="#8cb6ce" meeting="false" start="2019-11-01" duration="1" complete="0" thirdDate="2019-11-04" thirdDate-constraint="0" expand="true"/>
-                <task id="10" name="Write Design Document" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                    <task id="12" name="Create Design Diagram" color="#8cb6ce" meeting="false" start="2019-11-01" duration="8" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+        <task id="112" name="Winter" meeting="false" start="2019-11-25" duration="70" complete="0" expand="true">
+            <task id="113" name="Planning" color="#8cb6ce" meeting="false" start="2020-01-06" duration="6" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="115" name="Gantt Chart" color="#8cb6ce" meeting="false" start="2020-01-06" duration="6" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                <task id="118" name="Set up Google Cloud Env" color="#8cb6ce" meeting="false" start="2020-01-06" duration="6" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="96" name="Implementation" color="#000000" meeting="false" start="2020-01-06" duration="40" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+                <task id="97" name="Switch embeddings to BERT" color="#8cb6ce" meeting="false" start="2020-01-06" duration="15" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                <task id="103" name="Run model with new embeddings" color="#8cb6ce" meeting="false" start="2020-01-27" duration="15" complete="0" thirdDate="2020-01-27" thirdDate-constraint="0" expand="true"/>
+                <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-02-17" duration="10" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="125" name="Research Paper" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="false">
+                <task id="127" name="Literature Review" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
+                <task id="128" name="Introduction" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
+                <task id="129" name="Experimental Design" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="130" name="Design Document" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="false">
+                <task id="132" name="Experimental Design" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="139" name="Presentation" meeting="false" start="2019-11-25" duration="1" complete="0" expand="false">
+                <task id="141" name="Slides" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true">
+                    <task id="142" name="Write/Create Slides" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
+                    <task id="143" name="Practice Presentation" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="134" name="Poster" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true">
+                    <task id="135" name="Finalize Design" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                    <task id="137" name="Collect Images" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                    <task id="138" name="Write Text Content" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
-            <task id="27" name="Implementation" color="#8cb6ce" meeting="false" start="2019-11-06" duration="13" complete="0" thirdDate="2019-11-01" thirdDate-constraint="0" expand="true">
-                <task id="30" name="Implement Original Claim Extraction Model" color="#8cb6ce" meeting="false" start="2019-11-06" duration="11" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                    <depend id="80" type="2" difference="0" hardness="Strong"/>
-                    <task id="38" name="Requisition VM from CCI" color="#8cb6ce" meeting="false" start="2019-11-06" duration="4" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
-                        <depend id="42" type="2" difference="0" hardness="Strong"/>
-                    </task>
-                    <task id="42" name="Set up environment" color="#8cb6ce" meeting="false" start="2019-11-12" duration="3" complete="0" thirdDate="2019-11-13" thirdDate-constraint="0" expand="true">
-                        <depend id="52" type="2" difference="0" hardness="Strong"/>
-                        <depend id="57" type="2" difference="0" hardness="Strong"/>
-                    </task>
-                    <task id="52" name="Run Original Model(s)" color="#8cb6ce" meeting="false" start="2019-11-15" duration="4" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-                </task>
-                <task id="57" name="Convert configuration file to main file" color="#000000" meeting="false" start="2019-11-15" duration="6" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                    <task id="58" name="Configure DataSet Reader" color="#8cb6ce" meeting="false" start="2019-11-15" duration="2" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                        <depend id="67" type="2" difference="0" hardness="Strong"/>
-                    </task>
-                    <task id="67" name="Configure Model" color="#8cb6ce" meeting="false" start="2019-11-19" duration="3" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true">
-                        <depend id="72" type="2" difference="0" hardness="Strong"/>
-                    </task>
-                    <task id="72" name="Configure hyperparameters" color="#8cb6ce" meeting="false" start="2019-11-22" duration="1" complete="0" thirdDate="2019-11-15" thirdDate-constraint="0" expand="true"/>
-                </task>
-            </task>
-            <task id="34" name="Presentation" color="#000000" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
-                <task id="35" name="Present Fall Work" color="#8cb6ce" meeting="true" start="2019-11-25" duration="0" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-                <task id="80" name="Create Presentation" color="#8cb6ce" meeting="false" start="2019-11-21" duration="3" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                    <depend id="97" type="2" difference="29" hardness="Strong"/>
-                </task>
-            </task>
-        </task>
-        <task id="96" name="Implementation 2" meeting="false" start="2020-01-06" duration="55" complete="0" expand="true">
-            <task id="97" name="Switch embeddings to BERT" color="#8cb6ce" meeting="false" start="2020-01-06" duration="15" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                <depend id="103" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="103" name="Run model with new embeddings" color="#8cb6ce" meeting="false" start="2020-01-27" duration="15" complete="0" thirdDate="2020-01-27" thirdDate-constraint="0" expand="true">
-                <depend id="106" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-02-17" duration="10" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
-                <depend id="110" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="110" name="Write research paper" color="#8cb6ce" meeting="false" start="2020-03-02" duration="15" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
@@ -106,6 +127,7 @@
         <allocation task-id="24" resource-id="19" function="2" responsible="false" load="25.0"/>
         <allocation task-id="80" resource-id="19" function="4" responsible="true" load="25.0"/>
         <allocation task-id="35" resource-id="19" function="Default:1" responsible="false" load="5.0"/>
+        <allocation task-id="115" resource-id="19" function="Default:1" responsible="true" load="15.0"/>
         <allocation task-id="42" resource-id="20" function="1" responsible="true" load="25.0"/>
         <allocation task-id="6" resource-id="20" function="Default:1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="20" function="Default:1" responsible="false" load="10.0"/>
@@ -113,6 +135,7 @@
         <allocation task-id="52" resource-id="20" function="1" responsible="true" load="25.0"/>
         <allocation task-id="57" resource-id="20" function="Default:1" responsible="true" load="30.0"/>
         <allocation task-id="35" resource-id="20" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="115" resource-id="20" function="Default:1" responsible="false" load="15.0"/>
         <allocation task-id="38" resource-id="21" function="1" responsible="true" load="15.0"/>
         <allocation task-id="6" resource-id="21" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="21" function="1" responsible="false" load="10.0"/>
@@ -121,6 +144,7 @@
         <allocation task-id="24" resource-id="21" function="2" responsible="true" load="25.0"/>
         <allocation task-id="57" resource-id="21" function="1" responsible="false" load="30.0"/>
         <allocation task-id="35" resource-id="21" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="115" resource-id="21" function="1" responsible="false" load="15.0"/>
         <allocation task-id="6" resource-id="22" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="22" function="1" responsible="false" load="10.0"/>
         <allocation task-id="10" resource-id="22" function="2" responsible="true" load="20.0"/>
@@ -130,18 +154,21 @@
         <allocation task-id="80" resource-id="22" function="4" responsible="false" load="25.0"/>
         <allocation task-id="35" resource-id="22" function="4" responsible="false" load="5.0"/>
         <allocation task-id="80" resource-id="22" function="4" responsible="false" load="25.0"/>
+        <allocation task-id="115" resource-id="22" function="1" responsible="false" load="15.0"/>
         <allocation task-id="6" resource-id="23" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="23" function="1" responsible="false" load="10.0"/>
         <allocation task-id="10" resource-id="23" function="2" responsible="false" load="20.0"/>
         <allocation task-id="12" resource-id="23" function="2" responsible="false" load="20.0"/>
         <allocation task-id="57" resource-id="23" function="1" responsible="false" load="30.0"/>
         <allocation task-id="35" resource-id="23" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="115" resource-id="23" function="1" responsible="false" load="15.0"/>
         <allocation task-id="6" resource-id="24" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="24" function="1" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="24" function="2" responsible="false" load="20.0"/>
         <allocation task-id="57" resource-id="24" function="1" responsible="false" load="30.0"/>
         <allocation task-id="80" resource-id="24" function="4" responsible="false" load="25.0"/>
         <allocation task-id="35" resource-id="24" function="4" responsible="false" load="5.0"/>
+        <allocation task-id="115" resource-id="24" function="1" responsible="false" load="15.0"/>
     </allocations>
     <vacations/>
     <previous/>
