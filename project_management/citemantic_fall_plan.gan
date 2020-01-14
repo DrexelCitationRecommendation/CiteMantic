@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2019-11-24" view-index="0" gantt-divider-location="560" resource-divider-location="293" version="2.8.10" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2020-01-05" view-index="0" gantt-divider-location="560" resource-divider-location="293" version="2.8.10" locale="en_US">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd11" name="Outline number" width="56" order="0"/>
-        <field id="tpd3" name="Name" width="314" order="1"/>
-        <field id="tpd4" name="Begin date" width="80" order="2"/>
-        <field id="tpd5" name="End date" width="106" order="3"/>
+        <field id="tpd11" name="Outline number" width="70" order="0"/>
+        <field id="tpd3" name="Name" width="323" order="1"/>
+        <field id="tpd4" name="Begin date" width="85" order="2"/>
+        <field id="tpd5" name="End date" width="78" order="3"/>
         <timeline><![CDATA[10,0,8]]></timeline>
     </view>
     <view id="resource-table">
@@ -35,7 +35,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="111" name="Fall" meeting="false" start="2019-10-15" duration="30" complete="0" expand="true">
+        <task id="111" name="Fall" meeting="false" start="2019-10-15" duration="30" complete="0" expand="false">
             <task id="0" name="Planning" color="#8cb6ce" meeting="false" start="2019-10-15" duration="13" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="false">
                 <depend id="17" type="2" difference="0" hardness="Strong"/>
                 <task id="3" name="Create Slack channel and GitHub" color="#8cb6ce" meeting="false" start="2019-10-15" duration="1" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
@@ -81,33 +81,71 @@
                 </task>
             </task>
         </task>
-        <task id="112" name="Winter" meeting="false" start="2019-11-25" duration="70" complete="0" expand="true">
-            <task id="113" name="Planning" color="#8cb6ce" meeting="false" start="2020-01-06" duration="6" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
-                <task id="115" name="Gantt Chart" color="#8cb6ce" meeting="false" start="2020-01-06" duration="6" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
-                <task id="118" name="Set up Google Cloud Env" color="#8cb6ce" meeting="false" start="2020-01-06" duration="6" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
-            </task>
-            <task id="96" name="Implementation" color="#000000" meeting="false" start="2020-01-06" duration="40" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
-                <task id="97" name="Switch embeddings to BERT" color="#8cb6ce" meeting="false" start="2020-01-06" duration="15" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-                <task id="103" name="Run model with new embeddings" color="#8cb6ce" meeting="false" start="2020-01-27" duration="15" complete="0" thirdDate="2020-01-27" thirdDate-constraint="0" expand="true"/>
-                <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-02-17" duration="10" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
-            </task>
-            <task id="125" name="Research Paper" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="false">
-                <task id="127" name="Literature Review" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
-                <task id="128" name="Introduction" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
-                <task id="129" name="Experimental Design" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
-            </task>
-            <task id="130" name="Design Document" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="false">
-                <task id="132" name="Experimental Design" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
-            </task>
-            <task id="139" name="Presentation" meeting="false" start="2019-11-25" duration="1" complete="0" expand="false">
-                <task id="141" name="Slides" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true">
-                    <task id="142" name="Write/Create Slides" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
-                    <task id="143" name="Practice Presentation" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true"/>
+        <task id="112" name="Winter" color="#8cb6ce" meeting="false" start="2020-01-06" duration="40" complete="6" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+            <task id="113" name="Planning" color="#8cb6ce" meeting="false" start="2020-01-06" duration="11" complete="37" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="115" name="Gantt Chart" color="#8cb6ce" meeting="false" start="2020-01-06" duration="7" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                    <depend id="130" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="134" name="Poster" meeting="false" start="2019-11-25" duration="1" complete="0" expand="true">
-                    <task id="135" name="Finalize Design" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
-                    <task id="137" name="Collect Images" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
-                    <task id="138" name="Write Text Content" color="#8cb6ce" meeting="false" start="2019-11-25" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                <task id="118" name="Set up Google Cloud Env" color="#8cb6ce" meeting="false" start="2020-01-06" duration="6" complete="100" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <depend id="156" type="2" difference="2" hardness="Strong"/>
+                </task>
+                <task id="156" name="Testing Original Model on VM" color="#8cb6ce" meeting="false" start="2020-01-16" duration="3" complete="0" thirdDate="2019-12-09" thirdDate-constraint="0" expand="true">
+                    <depend id="106" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="96" name="Implementation" color="#8cb6ce" meeting="false" start="2020-01-21" duration="5" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+                <task id="97" name="Switch embeddings to BioBERT" color="#8cb6ce" meeting="false" start="2020-01-21" duration="5" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true"/>
+                <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-01-21" duration="5" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                    <depend id="129" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="125" name="Research Paper" color="#8cb6ce" meeting="false" start="2020-01-15" duration="26" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="197" name="Abstract" color="#8cb6ce" meeting="false" start="2020-02-19" duration="1" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
+                    <depend id="138" type="2" difference="0" hardness="Strong"/>
+                    <depend id="142" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="128" name="Introduction" color="#8cb6ce" meeting="false" start="2020-02-18" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <depend id="197" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="127" name="Literature Review" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <task id="245" name="BERT" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="0" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
+                    <task id="247" name="Language Models" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="0" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
+                    <task id="249" name="Contextual Embeddings" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="0" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
+                    <task id="251" name="Claims Extraction" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="0" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
+                    <task id="254" name="Motivation" color="#8cb6ce" meeting="false" start="2020-01-15" duration="5" complete="0" thirdDate="2020-01-15" thirdDate-constraint="0" expand="false">
+                        <task id="257" name="Literature Volume" color="#8cb6ce" meeting="false" start="2020-01-15" duration="5" complete="0" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
+                        <task id="260" name="Automated Reasoning" color="#8cb6ce" meeting="false" start="2020-01-15" duration="5" complete="0" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
+                    </task>
+                </task>
+                <task id="129" name="Experimental Design" color="#8cb6ce" meeting="false" start="2020-01-28" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <depend id="198" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="198" name="Evaluation / Result" color="#8cb6ce" meeting="false" start="2020-02-04" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
+                    <depend id="201" type="2" difference="0" hardness="Strong"/>
+                    <depend id="203" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="201" name="Conclusion" color="#8cb6ce" meeting="false" start="2020-02-11" duration="5" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+                    <depend id="135" type="2" difference="0" hardness="Strong"/>
+                    <task id="203" name="Future Work" color="#8cb6ce" meeting="false" start="2020-02-11" duration="5" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+                        <depend id="128" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+            </task>
+            <task id="130" name="Design Document" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+            <task id="139" name="Presentation" color="#8cb6ce" meeting="false" start="2020-02-18" duration="9" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="141" name="Slides" color="#8cb6ce" meeting="false" start="2020-02-20" duration="7" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <task id="142" name="Write/Create Slides" color="#8cb6ce" meeting="false" start="2020-02-20" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                        <depend id="143" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="143" name="Practice Presentation" color="#8cb6ce" meeting="false" start="2020-02-27" duration="2" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="134" name="Poster" color="#8cb6ce" meeting="false" start="2020-02-18" duration="7" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <task id="135" name="Finalize Design" color="#8cb6ce" meeting="false" start="2020-02-18" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                        <depend id="137" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="137" name="Collect Images" color="#8cb6ce" meeting="false" start="2020-02-19" duration="1" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                    <task id="138" name="Write Text Content" color="#8cb6ce" meeting="false" start="2020-02-20" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
         </task>
@@ -128,6 +166,8 @@
         <allocation task-id="80" resource-id="19" function="4" responsible="true" load="25.0"/>
         <allocation task-id="35" resource-id="19" function="Default:1" responsible="false" load="5.0"/>
         <allocation task-id="115" resource-id="19" function="Default:1" responsible="true" load="15.0"/>
+        <allocation task-id="106" resource-id="19" function="Default:1" responsible="true" load="10.0"/>
+        <allocation task-id="201" resource-id="19" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="42" resource-id="20" function="1" responsible="true" load="25.0"/>
         <allocation task-id="6" resource-id="20" function="Default:1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="20" function="Default:1" responsible="false" load="10.0"/>
@@ -136,6 +176,11 @@
         <allocation task-id="57" resource-id="20" function="Default:1" responsible="true" load="30.0"/>
         <allocation task-id="35" resource-id="20" function="4" responsible="false" load="5.0"/>
         <allocation task-id="115" resource-id="20" function="Default:1" responsible="false" load="15.0"/>
+        <allocation task-id="118" resource-id="20" function="Default:1" responsible="true" load="40.0"/>
+        <allocation task-id="106" resource-id="20" function="Default:1" responsible="false" load="10.0"/>
+        <allocation task-id="203" resource-id="20" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="128" resource-id="20" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="197" resource-id="20" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="38" resource-id="21" function="1" responsible="true" load="15.0"/>
         <allocation task-id="6" resource-id="21" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="21" function="1" responsible="false" load="10.0"/>
@@ -145,6 +190,10 @@
         <allocation task-id="57" resource-id="21" function="1" responsible="false" load="30.0"/>
         <allocation task-id="35" resource-id="21" function="4" responsible="false" load="5.0"/>
         <allocation task-id="115" resource-id="21" function="1" responsible="false" load="15.0"/>
+        <allocation task-id="106" resource-id="21" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="127" resource-id="21" function="1" responsible="true" load="50.0"/>
+        <allocation task-id="203" resource-id="21" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="197" resource-id="21" function="1" responsible="false" load="100.0"/>
         <allocation task-id="6" resource-id="22" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="22" function="1" responsible="false" load="10.0"/>
         <allocation task-id="10" resource-id="22" function="2" responsible="true" load="20.0"/>
@@ -155,6 +204,10 @@
         <allocation task-id="35" resource-id="22" function="4" responsible="false" load="5.0"/>
         <allocation task-id="80" resource-id="22" function="4" responsible="false" load="25.0"/>
         <allocation task-id="115" resource-id="22" function="1" responsible="false" load="15.0"/>
+        <allocation task-id="118" resource-id="22" function="1" responsible="false" load="20.0"/>
+        <allocation task-id="106" resource-id="22" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="201" resource-id="22" function="1" responsible="false" load="20.0"/>
+        <allocation task-id="128" resource-id="22" function="1" responsible="true" load="100.0"/>
         <allocation task-id="6" resource-id="23" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="23" function="1" responsible="false" load="10.0"/>
         <allocation task-id="10" resource-id="23" function="2" responsible="false" load="20.0"/>
@@ -162,6 +215,11 @@
         <allocation task-id="57" resource-id="23" function="1" responsible="false" load="30.0"/>
         <allocation task-id="35" resource-id="23" function="4" responsible="false" load="5.0"/>
         <allocation task-id="115" resource-id="23" function="1" responsible="false" load="15.0"/>
+        <allocation task-id="106" resource-id="23" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="127" resource-id="23" function="1" responsible="false" load="20.0"/>
+        <allocation task-id="129" resource-id="23" function="1" responsible="true" load="50.0"/>
+        <allocation task-id="198" resource-id="23" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="128" resource-id="23" function="1" responsible="false" load="100.0"/>
         <allocation task-id="6" resource-id="24" function="1" responsible="false" load="10.0"/>
         <allocation task-id="8" resource-id="24" function="1" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="24" function="2" responsible="false" load="20.0"/>
@@ -169,6 +227,10 @@
         <allocation task-id="80" resource-id="24" function="4" responsible="false" load="25.0"/>
         <allocation task-id="35" resource-id="24" function="4" responsible="false" load="5.0"/>
         <allocation task-id="115" resource-id="24" function="1" responsible="false" load="15.0"/>
+        <allocation task-id="106" resource-id="24" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="198" resource-id="24" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="201" resource-id="24" function="1" responsible="false" load="20.0"/>
+        <allocation task-id="135" resource-id="24" function="1" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <previous/>
