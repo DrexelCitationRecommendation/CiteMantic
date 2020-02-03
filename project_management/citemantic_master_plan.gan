@@ -5,7 +5,7 @@
         <field id="tpd3" name="Name" width="318" order="1"/>
         <field id="tpd4" name="Begin date" width="86" order="2"/>
         <field id="tpd5" name="End date" width="80" order="3"/>
-        <timeline><![CDATA[0,10,8]]></timeline>
+        <timeline><![CDATA[0,8,10]]></timeline>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="151" order="0"/>
@@ -81,7 +81,7 @@
                 </task>
             </task>
         </task>
-        <task id="112" name="Winter" color="#8cb6ce" meeting="false" start="2020-01-06" duration="53" complete="35" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+        <task id="112" name="Winter" color="#8cb6ce" meeting="false" start="2020-01-06" duration="58" complete="41" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
             <task id="113" name="Planning" color="#8cb6ce" meeting="false" start="2020-01-06" duration="11" complete="100" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                 <task id="115" name="Gantt Chart" color="#8cb6ce" meeting="false" start="2020-01-06" duration="7" complete="100" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <depend id="127" type="2" difference="0" hardness="Strong"/>
@@ -91,64 +91,64 @@
                     <depend id="156" type="2" difference="2" hardness="Strong"/>
                 </task>
                 <task id="156" name="Testing Original Model on VM" color="#8cb6ce" meeting="false" start="2020-01-16" duration="3" complete="100" thirdDate="2019-12-09" thirdDate-constraint="0" expand="true">
-                    <depend id="106" type="2" difference="5" hardness="Strong"/>
+                    <depend id="106" type="2" difference="10" hardness="Strong"/>
                 </task>
             </task>
-            <task id="96" name="Implementation" color="#8cb6ce" meeting="false" start="2020-01-21" duration="10" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
-                <task id="97" name="Switch embeddings to BioBERT" color="#8cb6ce" meeting="false" start="2020-01-21" duration="5" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+            <task id="96" name="Implementation" color="#8cb6ce" meeting="false" start="2020-01-21" duration="20" complete="30" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+                <task id="97" name="Switch embeddings to BioBERT" color="#8cb6ce" meeting="false" start="2020-01-21" duration="15" complete="50" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
                     <depend id="290" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="290" name="Optimize Embeddings" color="#8cb6ce" meeting="false" start="2020-01-28" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true"/>
-                <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-01-28" duration="5" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
+                <task id="290" name="Optimize Embeddings" color="#8cb6ce" meeting="false" start="2020-02-11" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true"/>
+                <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-02-04" duration="5" complete="0" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
                     <depend id="129" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
-            <task id="125" name="Research Paper" color="#8cb6ce" meeting="false" start="2020-01-15" duration="39" complete="28" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
-                <task id="197" name="Abstract" color="#8cb6ce" meeting="false" start="2020-03-03" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
+            <task id="125" name="Research Paper" color="#8cb6ce" meeting="false" start="2020-01-15" duration="44" complete="36" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="197" name="Abstract" color="#8cb6ce" meeting="false" start="2020-03-10" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
                     <depend id="138" type="2" difference="0" hardness="Strong"/>
                     <depend id="142" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="128" name="Introduction" color="#8cb6ce" meeting="false" start="2020-02-25" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="128" name="Introduction" color="#8cb6ce" meeting="false" start="2020-03-03" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <depend id="197" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="127" name="Literature Review" color="#8cb6ce" meeting="false" start="2020-01-15" duration="11" complete="92" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="127" name="Literature Review" color="#8cb6ce" meeting="false" start="2020-01-15" duration="19" complete="85" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <task id="245" name="BERT" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="100" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     <task id="247" name="Language Models" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="100" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     <task id="249" name="Contextual Embeddings" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="100" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     <task id="251" name="Claims Extraction" color="#8cb6ce" meeting="false" start="2020-01-15" duration="9" complete="100" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
-                    <task id="254" name="Motivation" color="#8cb6ce" meeting="false" start="2020-01-15" duration="11" complete="64" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true">
+                    <task id="254" name="Motivation" color="#8cb6ce" meeting="false" start="2020-01-15" duration="19" complete="55" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true">
                         <task id="257" name="Literature Volume" color="#8cb6ce" meeting="false" start="2020-01-15" duration="9" complete="100" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
-                        <task id="260" name="Automated Reasoning" color="#8cb6ce" meeting="false" start="2020-01-15" duration="11" complete="35" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
+                        <task id="260" name="Automated Reasoning" color="#8cb6ce" meeting="false" start="2020-01-15" duration="19" complete="35" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     </task>
                 </task>
-                <task id="129" name="Experimental Design" color="#8cb6ce" meeting="false" start="2020-02-04" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="129" name="Experimental Design" color="#8cb6ce" meeting="false" start="2020-02-11" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <depend id="198" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="198" name="Evaluation / Result" color="#8cb6ce" meeting="false" start="2020-02-11" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
+                <task id="198" name="Evaluation / Result" color="#8cb6ce" meeting="false" start="2020-02-18" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
                     <depend id="201" type="2" difference="0" hardness="Strong"/>
                     <depend id="203" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="201" name="Conclusion" color="#8cb6ce" meeting="false" start="2020-02-18" duration="5" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+                <task id="201" name="Conclusion" color="#8cb6ce" meeting="false" start="2020-02-25" duration="5" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
                     <depend id="135" type="2" difference="0" hardness="Strong"/>
-                    <task id="203" name="Future Work" color="#8cb6ce" meeting="false" start="2020-02-18" duration="5" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+                    <task id="203" name="Future Work" color="#8cb6ce" meeting="false" start="2020-02-25" duration="5" complete="0" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
                         <depend id="128" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
             </task>
             <task id="130" name="Design Document" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="90" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
-            <task id="139" name="Presentation" color="#8cb6ce" meeting="false" start="2020-02-25" duration="17" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
-                <task id="141" name="Slides" color="#8cb6ce" meeting="false" start="2020-03-10" duration="7" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
-                    <task id="142" name="Write/Create Slides" color="#8cb6ce" meeting="false" start="2020-03-10" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+            <task id="139" name="Presentation" color="#8cb6ce" meeting="false" start="2020-03-03" duration="17" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="141" name="Slides" color="#8cb6ce" meeting="false" start="2020-03-17" duration="7" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <task id="142" name="Write/Create Slides" color="#8cb6ce" meeting="false" start="2020-03-17" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                         <depend id="143" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="143" name="Practice Presentation" color="#8cb6ce" meeting="false" start="2020-03-17" duration="2" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                    <task id="143" name="Practice Presentation" color="#8cb6ce" meeting="false" start="2020-03-24" duration="2" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
                 </task>
-                <task id="134" name="Poster" color="#8cb6ce" meeting="false" start="2020-02-25" duration="15" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
-                    <task id="135" name="Finalize Design" color="#8cb6ce" meeting="false" start="2020-02-25" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="134" name="Poster" color="#8cb6ce" meeting="false" start="2020-03-03" duration="15" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                    <task id="135" name="Finalize Design" color="#8cb6ce" meeting="false" start="2020-03-03" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                         <depend id="137" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="137" name="Collect Images" color="#8cb6ce" meeting="false" start="2020-03-03" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
-                    <task id="138" name="Write Text Content" color="#8cb6ce" meeting="false" start="2020-03-10" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                    <task id="137" name="Collect Images" color="#8cb6ce" meeting="false" start="2020-03-10" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
+                    <task id="138" name="Write Text Content" color="#8cb6ce" meeting="false" start="2020-03-17" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
         </task>
