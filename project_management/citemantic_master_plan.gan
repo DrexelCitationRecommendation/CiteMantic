@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2020-01-19" view-index="0" gantt-divider-location="560" resource-divider-location="293" version="2.8.10" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Senior Project - Fall" company="CiteMantic" webLink="http://" view-date="2020-02-09" view-index="0" gantt-divider-location="560" resource-divider-location="293" version="2.8.10" locale="en_US">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
         <field id="tpd11" name="Outline number" width="70" order="0"/>
         <field id="tpd3" name="Name" width="309" order="1"/>
         <field id="tpd4" name="Begin date" width="84" order="2"/>
         <field id="tpd5" name="End date" width="78" order="3"/>
-        <timeline><![CDATA[0,8,10]]></timeline>
+        <timeline><![CDATA[8,0,10]]></timeline>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="151" order="0"/>
@@ -81,7 +81,7 @@
                 </task>
             </task>
         </task>
-        <task id="112" name="Winter" color="#8cb6ce" meeting="false" start="2020-01-06" duration="62" complete="60" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+        <task id="112" name="Winter" color="#8cb6ce" meeting="false" start="2020-01-06" duration="62" complete="64" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
             <task id="113" name="Planning" color="#8cb6ce" meeting="false" start="2020-01-06" duration="11" complete="100" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                 <task id="115" name="Gantt Chart" color="#8cb6ce" meeting="false" start="2020-01-06" duration="7" complete="100" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <depend id="127" type="2" difference="0" hardness="Strong"/>
@@ -94,16 +94,18 @@
                     <depend id="106" type="2" difference="10" hardness="Strong"/>
                 </task>
             </task>
-            <task id="96" name="Implementation" color="#8cb6ce" meeting="false" start="2020-01-21" duration="15" complete="100" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
+            <task id="96" name="Implementation" color="#8cb6ce" meeting="false" start="2020-01-21" duration="30" complete="83" thirdDate="2020-01-06" thirdDate-constraint="0" expand="true">
                 <task id="97" name="Switch embeddings to BioBERT" color="#8cb6ce" meeting="false" start="2020-01-21" duration="10" complete="100" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
                     <depend id="290" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="290" name="Optimize Embeddings" color="#8cb6ce" meeting="false" start="2020-02-04" duration="5" complete="100" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true"/>
                 <task id="106" name="Test model / gather metrics" color="#8cb6ce" meeting="false" start="2020-02-04" duration="5" complete="100" thirdDate="2019-10-07" thirdDate-constraint="0" expand="true">
                     <depend id="129" type="2" difference="0" hardness="Strong"/>
+                    <depend id="310" type="2" difference="5" hardness="Strong"/>
                 </task>
+                <task id="310" name="Confusion Matrix" color="#8cb6ce" meeting="false" start="2020-02-18" duration="10" complete="50" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="125" name="Research Paper" color="#8cb6ce" meeting="false" start="2020-01-15" duration="44" complete="57" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+            <task id="125" name="Research Paper" color="#8cb6ce" meeting="false" start="2020-01-15" duration="44" complete="67" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                 <task id="197" name="Abstract" color="#8cb6ce" meeting="false" start="2020-03-10" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
                     <depend id="138" type="2" difference="0" hardness="Strong"/>
                     <depend id="142" type="2" difference="0" hardness="Strong"/>
@@ -111,20 +113,22 @@
                 <task id="128" name="Introduction" color="#8cb6ce" meeting="false" start="2020-03-03" duration="5" complete="0" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <depend id="197" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="127" name="Literature Review" color="#8cb6ce" meeting="false" start="2020-01-15" duration="29" complete="90" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
+                <task id="127" name="Literature Review" color="#8cb6ce" meeting="false" start="2020-01-15" duration="34" complete="87" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <task id="245" name="BERT" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="100" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     <task id="247" name="Language Models" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="100" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     <task id="249" name="Contextual Embeddings" color="#8cb6ce" meeting="false" start="2020-01-15" duration="10" complete="100" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     <task id="251" name="Claims Extraction" color="#8cb6ce" meeting="false" start="2020-01-15" duration="9" complete="100" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
-                    <task id="254" name="Motivation" color="#8cb6ce" meeting="false" start="2020-01-15" duration="29" complete="77" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true">
-                        <task id="257" name="Literature Volume" color="#8cb6ce" meeting="false" start="2020-01-15" duration="9" complete="100" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
-                        <task id="260" name="Automated Reasoning" color="#8cb6ce" meeting="false" start="2020-01-15" duration="29" complete="70" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
+                    <task id="254" name="Motivation" color="#8cb6ce" meeting="false" start="2020-01-15" duration="34" complete="73" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true">
+                        <task id="257" name="Literature Volume" color="#8cb6ce" meeting="false" start="2020-01-15" duration="9" complete="100" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true">
+                            <depend id="260" type="2" difference="15" hardness="Strong"/>
+                        </task>
+                        <task id="260" name="Automated Reasoning" color="#8cb6ce" meeting="false" start="2020-02-18" duration="10" complete="50" thirdDate="2020-01-15" thirdDate-constraint="0" expand="true"/>
                     </task>
                 </task>
                 <task id="129" name="Experimental Design" color="#8cb6ce" meeting="false" start="2020-02-11" duration="5" complete="100" thirdDate="2019-11-25" thirdDate-constraint="0" expand="true">
                     <depend id="198" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="198" name="Evaluation / Result" color="#8cb6ce" meeting="false" start="2020-02-18" duration="5" complete="0" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
+                <task id="198" name="Evaluation / Result" color="#8cb6ce" meeting="false" start="2020-02-18" duration="5" complete="100" thirdDate="2020-01-13" thirdDate-constraint="0" expand="true">
                     <depend id="201" type="2" difference="0" hardness="Strong"/>
                     <depend id="203" type="2" difference="0" hardness="Strong"/>
                 </task>
