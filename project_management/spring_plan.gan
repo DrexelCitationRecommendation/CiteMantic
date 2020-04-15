@@ -2,14 +2,13 @@
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd11" name="Outline number" width="106" order="0"/>
-        <field id="tpd3" name="Name" width="224" order="1"/>
+        <field id="tpd3" name="Name" width="223" order="1"/>
         <field id="tpd4" name="Begin date" width="115" order="2"/>
         <field id="tpd5" name="End date" width="112" order="3"/>
-        <option id="taskLabelUp" value="name"/>
-        <timeline><![CDATA[0,10]]></timeline>
+        <timeline><![CDATA[10,0]]></timeline>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="207" order="0"/>
+        <field id="0" name="Name" width="206" order="0"/>
         <field id="1" name="Default role" width="83" order="1"/>
     </view>
     <!-- -->
@@ -36,10 +35,10 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="7" name="Initial Tasks" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="50" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true">
+        <task id="7" name="Initial Tasks" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="40" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true">
             <depend id="0" type="2" difference="0" hardness="Strong"/>
             <depend id="42" type="2" difference="0" hardness="Strong"/>
-            <task id="4" name="Verify Experimental Design" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="50" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
+            <task id="4" name="Verify Experimental Design" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
             <task id="10" name="Create Project Plan" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="100" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
             <task id="12" name="Summarize Changes to Source Paper" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
             <task id="17" name="Find Submission Conference" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="100" thirdDate="2020-04-02" thirdDate-constraint="0" expand="true"/>
