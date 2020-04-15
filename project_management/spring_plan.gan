@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="spring-term-plan" company="" webLink="http://" view-date="2020-04-03" view-index="0" gantt-divider-location="560" resource-divider-location="293" version="2.8.10" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="spring-term-plan" company="" webLink="http://" view-date="2020-04-01" view-index="0" gantt-divider-location="560" resource-divider-location="293" version="2.8.10" locale="en_US">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd11" name="Outline number" width="106" order="0"/>
@@ -36,13 +36,13 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="7" name="Initial Tasks" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="20" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true">
+        <task id="7" name="Initial Tasks" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="50" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true">
             <depend id="0" type="2" difference="0" hardness="Strong"/>
             <depend id="42" type="2" difference="0" hardness="Strong"/>
-            <task id="4" name="Verify Experimental Design" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
+            <task id="4" name="Verify Experimental Design" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="50" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
             <task id="10" name="Create Project Plan" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="100" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
             <task id="12" name="Summarize Changes to Source Paper" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="0" thirdDate="2020-04-01" thirdDate-constraint="0" expand="true"/>
-            <task id="17" name="Find Submission Conference" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="0" thirdDate="2020-04-02" thirdDate-constraint="0" expand="true"/>
+            <task id="17" name="Find Submission Conference" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="100" thirdDate="2020-04-02" thirdDate-constraint="0" expand="true"/>
             <task id="19" name="Start Creating Sentences from Outline" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="0" thirdDate="2020-04-02" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="83" name="Additional Testing" color="#8cb6ce" meeting="false" start="2020-04-13" duration="10" complete="0" thirdDate="2020-04-13" thirdDate-constraint="0" expand="true">
